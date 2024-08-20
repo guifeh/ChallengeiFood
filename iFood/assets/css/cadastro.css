@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wallpaper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 200px;
+}
+body{
+    background-color: #FDEDEE;
+}
+.logo-ifood{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+}
+.container{
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 300px;
+    border-radius: 10px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.144);
+}
+.container > h1{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.container > h2{
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.form-control{
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btns > button{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+.h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.p1{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.text-primary{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.form-group {
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 15px;
+}
+.form-group-checkbox {
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 15px;
+    align-items: left;
+    justify-content: left;
+    display: flex;
+}
+
+.forgot{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 15px;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    margin-left: 60px;
+}
+
+.forgot:hover{
+    color: #2f4c8a;
+}
+
+.text-primary:hover{
+    color: #2f4c8a;
+}
+
+.btns > button:hover{
+    background-color: #EA1D2C;
+    color: white;
+}
+@media(max-width: 1100px){
+    .container{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .wallpaper{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 500px;
+    }
+}
+@media(max-width: 600px){
+    .container{
+        width: 30%;
+        height: 90%;
+        padding: 10px;
+    }
+    .btns > button{
+        width: 1035px;
+    }
+    .container > h1, h2{
+        font-size: 20px
+    }
+    .cidade-container{
+        display: none;
+    }
+    .form-group{
+        width: 100%;
+        height: 90%;
+        font-size: 12px;
+    }
+}
+@media(max-width: 400px){
+    .container{
+        width: 30%;
+        height: 90%;
+        padding: 20px
+    }
+}
